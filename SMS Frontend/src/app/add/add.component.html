@@ -1,0 +1,52 @@
+<div class="container mx-auto">
+    <div class="row">
+        <div class="col-md-12">
+            <form (ngSubmit)="submitForm()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" [(ngModel)]="student.name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roleNumber">Roll Number:</label>
+                    <input type="text" id="roleNumber" name="roleNumber" [(ngModel)]="student.roleNumber"
+                        class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="English">English:</label>
+                    <input type="number" id="English" name="English" [(ngModel)]="student.english" class="form-control"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Tamil">Tamil:</label>
+                    <input type="number" id="Tamil" name="Tamil" [(ngModel)]="student.tamil" class="form-control"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Maths">Maths:</label>
+                    <input type="number" id="maths" name="maths" [(ngModel)]="student.maths" class="form-control"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="social">Social:</label>
+                    <input type="number" id="social" name="social" [(ngModel)]="student.social" class="form-control"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="science">Science:</label>
+                    <input type="number" id="science" name="science" [(ngModel)]="student.science" class="form-control"
+                        required>
+                </div>
+<br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

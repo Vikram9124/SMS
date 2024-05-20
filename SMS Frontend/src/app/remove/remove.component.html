@@ -1,0 +1,32 @@
+<table class="table  table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Roll Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">English</th>
+            <th scope="col">Tamil</th>
+            <th scope="col">Maths</th>
+            <th scope="col">Social</th>
+            <th scope="col">Science</th>
+            <th scope="col">Total</th>
+            <th scope="col">Result</th>
+            <th scope="col">Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of stud">
+            <td>{{s.id}}</td>
+            <td>{{s.roleNumber}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.english}}</td>
+            <td>{{s.tamil}}</td>
+            <td>{{s.maths}}</td>
+            <td>{{s.social}}</td>
+            <td>{{s.science}}</td>
+            <td>{{s.total}}</td>
+            <td>{{s.result}}</td>
+            <td><button class="btn btn-danger" (click)="deleteById(s.id)" >Delete</button></td>
+        </tr>
+    </tbody>
+</table>
